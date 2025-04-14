@@ -1,0 +1,6 @@
+1. if one side of the crawler (left or right) stops due to a motor fault or gear jam, then there might occur some rotation kind movement 
+   of the bot.
+2. now the  bot will become unbalanced due to uneven forces on both side now.and now the tipping risk has increased. the bot may tilt and may 
+   fall.
+3. since now one motor will stop working. so we can detect the difference between their angular velocities. second we can detect change in 
+   acceleration using the IMU sensor.. also the camera sensor can detect the tilt in the view.
