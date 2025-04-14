@@ -1,0 +1,18 @@
+robot that can climb stairs:-
+
+1. type of mechanism:- we will use hybrid mechanism which will be combination of legged and wheeled. wheeled will be used for normal travelling on surfaces and legged like mechanism 
+                       will be used in lifting the robot through stairs. legged bots have legs with joints that can climb the stairs one by one. so we can use them in the front portion
+                       of the bot. thus using a combination of wheeled and legged the bot can travel on flat surfaces and also climb up the stairs.
+2. stability, COM, power :- for lifting , we have to use strong motors, means which can provide high power.
+                            we will keep the centre of mass low so that the robot does not fall forward or backward . To keep the centre of mass lower we can put the heavy parts at 
+                            the bottom. Also we make sure that the base of the bot is not naarow, it should be wide so that the bot do not tilt.
+                            we can use rubber tires which can provide grip to the wheels and help in easy movement.
+3. control strategy:-  for calculating the depth and height of the stair we can use the ultrasonic sensor. ultrasonic sensor emits sound waves and then calculates the time it takes to 
+                       come back after reflecting back from the object and then we can calculate the distance between the obstacle. so we can place it in such way that it will detect 
+                       the vertical distance i.e stair height and stair depth.
+                       then we can use camera or vision sensor. it will capture different images and video frames and help in detecting the  steps,obstacles etc. means here open cv can 
+                       be used for processing image reading and all other things.like when the camera will capture the image, we will use it for edge detection, counter detection .
+                       also IMU sensor can be used for deteting the acceleration of the bot.
+4. adapting the motion:- so as the object will detect the height and depth of the stairs , it will detect the edge of the stair using these sensors and camera only. and as soon it will
+                         detect the edge it will give instructions to the motor to lift up the legs so that the bot can now climb the stair . and from inputs by various devices it will
+                         adapt itself and continue its motion.
