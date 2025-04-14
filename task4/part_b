@@ -1,0 +1,17 @@
+1. if we are not using cameras, then we can use sensors to detect and track the performance of the ball. 
+   we can use the force sensor as due to the weight of the ball , it will exert force so the force sensor will detect the normal reaction(force)
+2. we know that force sensor detects the force if applied by any object. so we can place sensors at each of the corner. 
+   then when the ball will be near or on that corner , it will detect the amount of force..likewise all the four sensors will detect the force 
+   so out of all four sensors, one will record the largest amount of force. it means that ball is at position .. so like this we can detect and 
+   track the position of the ball.
+3. pros:- these sensors are't much costly.
+          and direct contact with the ball is not needed.
+   cons:- accuracy is not present in determining the position of the ball .like when the ball is moving very fast.
+
+
+   OR
+   another idea which i can think of is using IR sensor. like we know IR sensor can work in the way that if we put a obstacle in its front then
+   it gets a signal so we can code in the ardueino like when it detects the obstacle it means ball is present there so we write a code for the
+   motor accordingly. but i think this will not work perfectly as it will detect the ball only when it is exactly at its top. and 
+   here contact will be needed.. like we can't place any object in between the sensor and ball. also if we are using this then , we have to use 
+   so many IR sensors.
