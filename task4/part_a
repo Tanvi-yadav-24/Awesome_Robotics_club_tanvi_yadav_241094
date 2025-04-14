@@ -1,0 +1,17 @@
+1. since i have to take a flat platform i would use square or rectangle. here i am considering square.
+   Then for proper balancing of the ball i would prefer to use 4 servo motors as with these 4 servo motors,
+   the platform would be able to move in 4 independent directions means it would have 4 DOF. like i can tilt forward, backward, left ,right which will increases the
+   ability of the bot to balance the ball. then i would either prefer to put the servos at each corner or maybe we can also put them at the centres of each side.
+2. additional degree of freedom will improve the stability and control precision because since we have more motors and each of the 4 motors will control movement in 4 different 
+   independent directions so this will help in balancing. another thing is that if the ball is moving fast then also it is helpful as the movement will be controlled by 4 motors.
+3. first i will place a square platform. then i will take 4 motors and place each of  them at each corner using joints and making proper connections .
+   the ball will be on the centre of the square platform and a camera is above to track the ball.
+4. pros of the system are that:- a) it helps to improve stability, responsiveness and control precision 
+                                 b) it will give faster response
+                                 c) it will balance the ball more effectively
+   cons of the system are :- a) since we have 4 motors, therefore number of connections will increase and will become complex.
+                             b) also the cost will increase as we increase the number of motors.
+                             c) for the functioning of motors, we have to write more code like we write code for motors and the sensors in ardueino IDE. so the code complexity increases.
+                             
+
+            
