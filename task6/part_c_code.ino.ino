@@ -1,9 +1,11 @@
+/// i have written this code..this code is not exacly similar to what was asked in the question. but i know only how a motor and an IR sensor
+/// can work together. like when the IR sensor is detecting something motor is not moving otherwise it is spinning back and forth.
 
 #include <Servo.h>
 
-int servoPin = 9;
+int servoPin = 9; // define the pin for the servo motor
 Servo servo;
-int angle = 0;  // servo position in degrees
+int angle = 0;  // servo's initial position in degrees
 int IRSensor=2;
 void setup() {
   Serial.begin(115200);
@@ -17,24 +19,24 @@ void setup() {
 
 void loop() {
   int sensorStatus=digitalRead(IRSensor);
-  if (sensorStatus==1)
+  if (sensorStatus==1) // if no object detected (IR sensor gives high)
   {
     
     Serial.println("Object not detected");
-    for(angle = 0; angle < 180; angle++) {
+    for(angle = 0; angle < 180; angle++) { // sweeps servo from 0 to 180
         servo.write(angle);
         delay(3);
     }
     
     // now scan back from 180 to 0 degrees
-    for(angle = 180; angle > 0; angle--) {
+    for(angle = 180; angle > 0; angle--) { // sweeps the servo back from 180 to 0
         servo.write(angle);
         delay(3);
     }
 
 
   }
-  else{
+  else{ // if object detected IR sensor gives low.
   
     Serial.println("Object detected");
 
